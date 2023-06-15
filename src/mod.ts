@@ -642,7 +642,7 @@ export class Mod implements IPreAkiLoadMod, IPostDBLoadMod
 
     public getGameConfig(sessionID: string): IGameConfigResponse
     {
-        let externalIp = `${this.coopConfig.externalIP}`;
+        let externalIp = `http://${this.coopConfig.externalIP}:6969`;
 
         if(this.coopConfig.useExternalIPFinder) { 
             console.log(`============================================================`);
