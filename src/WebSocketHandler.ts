@@ -60,6 +60,16 @@ export class WebSocketHandler {
 
         // get url params
         //const urlParams = this.getUrlParams(req.url);
+
+        if(this.webSockets[sessionID] !== undefined)
+        {
+            if(this.webSockets[sessionID].readyState == WebSocket.OPEN)
+            {
+                console.log(`${sessionID} is already connected to Coop Web Socket!`);
+                ws.close();
+                return;
+            }
+        }
         
         ws.on("message", async function message(msg) 
         {
@@ -104,7 +114,6 @@ export class WebSocketHandler {
             delete this.webSockets[sessionId];
 
     }
-
 
     private async processMessageString(msgStr: string) {
 

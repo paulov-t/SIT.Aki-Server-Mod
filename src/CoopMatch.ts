@@ -58,6 +58,7 @@ export class CoopMatch {
     /** The Connected User Profiles. */
     public ConnectedUsers: string[] = [];
 
+    /** The Authorized User Profiles. */
     public AuthorizedUsers: string[] = [];
 
     /** All characters in the game. Including AI */
