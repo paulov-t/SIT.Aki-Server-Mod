@@ -392,13 +392,15 @@ export class StayInTarkovMod implements IPreAkiLoadMod, IPostDBLoadMod
                             {
                                 if(WebSocketHandler.Instance.webSockets[info.profileId].readyState == WebSocket.OPEN)
                                 {
+                                    logger.info(`JoinMatch failed: ${info.profileId} is already connected!`);
+
                                     output = JSON.stringify(
                                         {
                                             alreadyConnected: true
                                         }
                                     )
                                     
-                                    logger.info(`JoinMatch failed: ${info.profileId} is already connected!`);
+                                    return output;
                                 }
                             }
                         }
