@@ -5,7 +5,7 @@ A SPT-Aki mod to be used with SPT-Aki Server to allow the Coop Module to communi
 
 <div align=center style="text-align: center;">
 <h1> Stay in Tarkov has moved </h1>
-Please use the [new repository](https://github.com/stayintarkov/SIT.Aki-Server-Mod) which is managed by a group of Contributors of the original Stay In Tarkov
+Please use the <a href="https://github.com/stayintarkov/SIT.Aki-Server-Mod">New Repository</a> which is managed by a group of Contributors of the original Stay In Tarkov
 </div>
 
 ---
